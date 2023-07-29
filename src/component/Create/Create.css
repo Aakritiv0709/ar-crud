@@ -1,0 +1,157 @@
+.button {
+  color: white;
+  background: rgb(230, 71, 164);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+.button:hover {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.links {
+  color: #71b7e6;
+  width: 100%;
+  max-width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 3px 5px;
+  transition-duration: 0.3s;
+}
+.links .nav:hover {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  color: white;
+  padding: 3px 5px;
+  border-radius: 3px;
+  transition-duration: 0.3s;
+}
+.logo {
+  text-decoration: none;
+  color: #9b59b6;
+  font-size: 25px;
+  font-weight: 500;
+}
+.main_container {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.main_sub_container {
+  max-width: 700px;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.main_container .createheading {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  color: black;
+}
+.main_container .createheading::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  border-radius: 3px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.flname {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.flname .fname,
+.flname .lname {
+  width: calc(100% / 2 - 20px);
+}
+
+.nationname {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.nationname .countryname,
+.nationname .statename,
+.nationname .cityname {
+  width: calc(100% / 3 - 20px);
+}
+
+.password {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.password .typepassword,
+.password .confirmpassword {
+  width: calc(100% / 2 - 20px);
+}
+.label {
+  color: black;
+  font-weight: 500;
+}
+
+header {
+  background: white;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  background-color: pink;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+  background-color: #9b59b6;
+  min-height: 50px;
+}
+/*Responsiveness media queries*/
+@media (max-width: 768px) {
+  .flname {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .flname .fname,
+  .flname .lname {
+    width: 100%;
+  }
+  .nationname {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .nationname .countryname,
+  .nationname .statename,
+  .nationname .cityname {
+    width: 100%;
+  }
+  .password {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .password .typepassword,
+  .password .confirmpassword {
+    width: 100%;
+  }
+}
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}

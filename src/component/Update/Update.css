@@ -1,0 +1,61 @@
+.data_button {
+  color: white;
+  background: rgb(230, 71, 164);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+.data_button:hover {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.update_button {
+  color: white;
+  background: rgb(230, 71, 164);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+.update_button:hover {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.back_button {
+  padding: 5px 20px;
+  margin-left: 5px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+  border: none;
+}
+.back_button:hover {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main_container .updateheading {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  color: black;
+}
+.main_container .updateheading::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  border-radius: 3px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.error-message {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  color: red;
+}
